@@ -57,6 +57,7 @@
 		470C4D8A18FF7B8C00BB03E3 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		470C4D8C18FF81AA00BB03E3 /* KWController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWController.h; sourceTree = "<group>"; };
 		470C4D8D18FF81AA00BB03E3 /* KWController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWController.m; sourceTree = "<group>"; };
+		475EC04D18FF8B3900812A23 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +86,7 @@
 		470C4D4818FF7B4800BB03E3 = {
 			isa = PBXGroup;
 			children = (
+				475EC04D18FF8B3900812A23 /* README.md */,
 				470C4D5A18FF7B4900BB03E3 /* Knowed Workbench */,
 				470C4D7818FF7B4900BB03E3 /* Knowed WorkbenchTests */,
 				470C4D5318FF7B4800BB03E3 /* Frameworks */,
@@ -488,6 +490,7 @@
 				470C4D8418FF7B4900BB03E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		470C4D8518FF7B4900BB03E3 /* Build configuration list for PBXNativeTarget "Knowed WorkbenchTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +499,7 @@
 				470C4D8718FF7B4900BB03E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
