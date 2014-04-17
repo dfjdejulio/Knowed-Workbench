@@ -18,9 +18,9 @@
 		470C4D7518FF7B4900BB03E3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470C4D5418FF7B4900BB03E3 /* Cocoa.framework */; };
 		470C4D7D18FF7B4900BB03E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 470C4D7B18FF7B4900BB03E3 /* InfoPlist.strings */; };
 		470C4D7F18FF7B4900BB03E3 /* Knowed_WorkbenchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 470C4D7E18FF7B4900BB03E3 /* Knowed_WorkbenchTests.m */; };
-		470C4D8918FF7B8100BB03E3 /* Knowed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470C4D8818FF7B8100BB03E3 /* Knowed.framework */; };
 		470C4D8B18FF7B8C00BB03E3 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470C4D8A18FF7B8C00BB03E3 /* JavaScriptCore.framework */; };
 		470C4D8E18FF81AA00BB03E3 /* KWController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470C4D8D18FF81AA00BB03E3 /* KWController.m */; };
+		4734E68D1900174700151AFC /* Knowed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4734E68C1900174700151AFC /* Knowed.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +53,10 @@
 		470C4D7A18FF7B4900BB03E3 /* Knowed WorkbenchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Knowed WorkbenchTests-Info.plist"; sourceTree = "<group>"; };
 		470C4D7C18FF7B4900BB03E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		470C4D7E18FF7B4900BB03E3 /* Knowed_WorkbenchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Knowed_WorkbenchTests.m; sourceTree = "<group>"; };
-		470C4D8818FF7B8100BB03E3 /* Knowed.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Knowed.framework; path = "../../../Library/Developer/Xcode/DerivedData/JS_Sandbox-dvswmgzftiidtufrsoshomgktmly/Build/Products/Debug/Knowed.framework"; sourceTree = "<group>"; };
 		470C4D8A18FF7B8C00BB03E3 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		470C4D8C18FF81AA00BB03E3 /* KWController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWController.h; sourceTree = "<group>"; };
 		470C4D8D18FF81AA00BB03E3 /* KWController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWController.m; sourceTree = "<group>"; };
+		4734E68C1900174700151AFC /* Knowed.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Knowed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		475EC04D18FF8B3900812A23 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,8 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4734E68D1900174700151AFC /* Knowed.framework in Frameworks */,
 				470C4D8B18FF7B8C00BB03E3 /* JavaScriptCore.framework in Frameworks */,
-				470C4D8918FF7B8100BB03E3 /* Knowed.framework in Frameworks */,
 				470C4D5518FF7B4900BB03E3 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,8 +106,8 @@
 		470C4D5318FF7B4800BB03E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4734E68C1900174700151AFC /* Knowed.framework */,
 				470C4D8A18FF7B8C00BB03E3 /* JavaScriptCore.framework */,
-				470C4D8818FF7B8100BB03E3 /* Knowed.framework */,
 				470C4D5418FF7B4900BB03E3 /* Cocoa.framework */,
 				470C4D7318FF7B4900BB03E3 /* XCTest.framework */,
 				470C4D5618FF7B4900BB03E3 /* Other Frameworks */,
@@ -405,6 +405,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/JS_Sandbox-dvswmgzftiidtufrsoshomgktmly/Build/Products/Debug",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/KnowedStuff-axkilnccmrdixxbiqprcxrumjobf/Build/Products/Debug",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Knowed Workbench/Knowed Workbench-Prefix.pch";
@@ -422,6 +423,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/JS_Sandbox-dvswmgzftiidtufrsoshomgktmly/Build/Products/Debug",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/KnowedStuff-axkilnccmrdixxbiqprcxrumjobf/Build/Products/Debug",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Knowed Workbench/Knowed Workbench-Prefix.pch";
