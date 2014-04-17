@@ -7,7 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Knowed/Knowed.h>
+#import <JavaScriptCore/JavaScriptCore.h>
 
-@interface KWController : NSObject
+@interface KWController : NSObject {
+    JSContext *context;
+    KnowedBufferConsole *console;
+}
+
+@property NSTextView IBOutlet *consoleView;
+
+@property NSTextField IBOutlet *retView;
+
+- (IBAction) execute:(id)sender;
 
 @end

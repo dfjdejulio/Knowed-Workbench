@@ -10,4 +10,20 @@
 
 @implementation KWController
 
+- (IBAction)execute:(id)sender
+{
+    JSValue *retval = [context evaluateScript: [sender stringValue]];
+    [self.retView setStringValue: [retval toString]];
+    [self.consoleView setString: console.contents];
+}
+
+- (id) init
+{
+    self = [super init];
+    context = [JSContext new];
+    console = [KnowedBufferConsole new];
+    context[@"console"] = console;
+    return self;
+}
+
 @end
