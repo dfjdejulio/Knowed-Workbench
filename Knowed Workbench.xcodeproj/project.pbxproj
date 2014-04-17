@@ -18,6 +18,9 @@
 		470C4D7518FF7B4900BB03E3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470C4D5418FF7B4900BB03E3 /* Cocoa.framework */; };
 		470C4D7D18FF7B4900BB03E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 470C4D7B18FF7B4900BB03E3 /* InfoPlist.strings */; };
 		470C4D7F18FF7B4900BB03E3 /* Knowed_WorkbenchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 470C4D7E18FF7B4900BB03E3 /* Knowed_WorkbenchTests.m */; };
+		470C4D8918FF7B8100BB03E3 /* Knowed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470C4D8818FF7B8100BB03E3 /* Knowed.framework */; };
+		470C4D8B18FF7B8C00BB03E3 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470C4D8A18FF7B8C00BB03E3 /* JavaScriptCore.framework */; };
+		470C4D8E18FF81AA00BB03E3 /* KWController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470C4D8D18FF81AA00BB03E3 /* KWController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,10 @@
 		470C4D7A18FF7B4900BB03E3 /* Knowed WorkbenchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Knowed WorkbenchTests-Info.plist"; sourceTree = "<group>"; };
 		470C4D7C18FF7B4900BB03E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		470C4D7E18FF7B4900BB03E3 /* Knowed_WorkbenchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Knowed_WorkbenchTests.m; sourceTree = "<group>"; };
+		470C4D8818FF7B8100BB03E3 /* Knowed.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Knowed.framework; path = "../../../Library/Developer/Xcode/DerivedData/JS_Sandbox-dvswmgzftiidtufrsoshomgktmly/Build/Products/Debug/Knowed.framework"; sourceTree = "<group>"; };
+		470C4D8A18FF7B8C00BB03E3 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		470C4D8C18FF81AA00BB03E3 /* KWController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWController.h; sourceTree = "<group>"; };
+		470C4D8D18FF81AA00BB03E3 /* KWController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				470C4D8B18FF7B8C00BB03E3 /* JavaScriptCore.framework in Frameworks */,
+				470C4D8918FF7B8100BB03E3 /* Knowed.framework in Frameworks */,
 				470C4D5518FF7B4900BB03E3 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +104,8 @@
 		470C4D5318FF7B4800BB03E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				470C4D8A18FF7B8C00BB03E3 /* JavaScriptCore.framework */,
+				470C4D8818FF7B8100BB03E3 /* Knowed.framework */,
 				470C4D5418FF7B4900BB03E3 /* Cocoa.framework */,
 				470C4D7318FF7B4900BB03E3 /* XCTest.framework */,
 				470C4D5618FF7B4900BB03E3 /* Other Frameworks */,
@@ -117,6 +128,8 @@
 			children = (
 				470C4D6618FF7B4900BB03E3 /* AppDelegate.h */,
 				470C4D6718FF7B4900BB03E3 /* AppDelegate.m */,
+				470C4D8C18FF81AA00BB03E3 /* KWController.h */,
+				470C4D8D18FF81AA00BB03E3 /* KWController.m */,
 				470C4D6918FF7B4900BB03E3 /* MainMenu.xib */,
 				470C4D6C18FF7B4900BB03E3 /* Images.xcassets */,
 				470C4D5B18FF7B4900BB03E3 /* Supporting Files */,
@@ -254,6 +267,7 @@
 			files = (
 				470C4D6818FF7B4900BB03E3 /* AppDelegate.m in Sources */,
 				470C4D6118FF7B4900BB03E3 /* main.m in Sources */,
+				470C4D8E18FF81AA00BB03E3 /* KWController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +400,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/JS_Sandbox-dvswmgzftiidtufrsoshomgktmly/Build/Products/Debug",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Knowed Workbench/Knowed Workbench-Prefix.pch";
 				INFOPLIST_FILE = "Knowed Workbench/Knowed Workbench-Info.plist";
@@ -399,6 +417,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/JS_Sandbox-dvswmgzftiidtufrsoshomgktmly/Build/Products/Debug",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Knowed Workbench/Knowed Workbench-Prefix.pch";
 				INFOPLIST_FILE = "Knowed Workbench/Knowed Workbench-Info.plist";
