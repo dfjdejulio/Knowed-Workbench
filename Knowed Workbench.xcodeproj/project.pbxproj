@@ -213,8 +213,9 @@
 		470C4D4918FF7B4800BB03E3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = KW;
 				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = AISB;
+				ORGANIZATIONNAME = "Doug DeJulio";
 				TargetAttributes = {
 					470C4D7118FF7B4900BB03E3 = {
 						TestTargetID = 470C4D5018FF7B4800BB03E3;
