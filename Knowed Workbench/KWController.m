@@ -22,7 +22,7 @@
     self = [super init];
     context = [JSContext new];
     console = [KnowedBufferConsole new];
-    context[@"console"] = console;
+    [console addSelfToContext: context];
     return self;
 }
 
