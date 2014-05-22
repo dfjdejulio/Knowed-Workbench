@@ -22,7 +22,24 @@
     self = [super init];
     context = [JSContext new];
     console = [KnowedBufferConsole new];
-    [console addSelfToContext: context];
+    [console addSelfToContext:context];
+    KnowedUtil *util = [KnowedUtil new];
+    util->outBlock = ^(NSString *msg) {
+        NSAlert *alert = [NSAlert new];
+        alert.alertStyle = NSInformationalAlertStyle;
+        alert.messageText = msg;
+        [alert runModal];
+    };
+    util->inBlock = ^(NSString *msg) {
+        NSAlert *prompt = [NSAlert new];
+        NSTextField *input = [[NSTextField alloc] initWithFrame:NSMakeRect(0, 0, 160, 24)];
+        prompt.alertStyle = NSInformationalAlertStyle;
+        prompt.messageText = msg;
+        prompt.accessoryView = input;
+        [prompt runModal];
+        return input.stringValue;
+    };
+    [util addSelfToContext:context];
     return self;
 }
 
