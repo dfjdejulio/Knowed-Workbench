@@ -21,6 +21,8 @@
 		470C4D8B18FF7B8C00BB03E3 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470C4D8A18FF7B8C00BB03E3 /* JavaScriptCore.framework */; };
 		470C4D8E18FF81AA00BB03E3 /* KWController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470C4D8D18FF81AA00BB03E3 /* KWController.m */; };
 		4734E68D1900174700151AFC /* Knowed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4734E68C1900174700151AFC /* Knowed.framework */; };
+		47B234D8192ED9E500F72917 /* Knowed Workbench.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 47B234D7192ED9E500F72917 /* Knowed Workbench.sdef */; };
+		47B234DB192EDDE800F72917 /* KWScriptCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B234DA192EDDE800F72917 /* KWScriptCommand.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,9 @@
 		470C4D8D18FF81AA00BB03E3 /* KWController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWController.m; sourceTree = "<group>"; };
 		4734E68C1900174700151AFC /* Knowed.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Knowed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		475EC04D18FF8B3900812A23 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		47B234D7192ED9E500F72917 /* Knowed Workbench.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Knowed Workbench.sdef"; sourceTree = "<group>"; };
+		47B234D9192EDDE800F72917 /* KWScriptCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWScriptCommand.h; sourceTree = "<group>"; };
+		47B234DA192EDDE800F72917 /* KWScriptCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWScriptCommand.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +140,8 @@
 				470C4D6918FF7B4900BB03E3 /* MainMenu.xib */,
 				470C4D6C18FF7B4900BB03E3 /* Images.xcassets */,
 				470C4D5B18FF7B4900BB03E3 /* Supporting Files */,
+				47B234D9192EDDE800F72917 /* KWScriptCommand.h */,
+				47B234DA192EDDE800F72917 /* KWScriptCommand.m */,
 			);
 			path = "Knowed Workbench";
 			sourceTree = "<group>";
@@ -147,6 +154,7 @@
 				470C4D6018FF7B4900BB03E3 /* main.m */,
 				470C4D6218FF7B4900BB03E3 /* Knowed Workbench-Prefix.pch */,
 				470C4D6318FF7B4900BB03E3 /* Credits.rtf */,
+				47B234D7192ED9E500F72917 /* Knowed Workbench.sdef */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -246,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47B234D8192ED9E500F72917 /* Knowed Workbench.sdef in Resources */,
 				470C4D5F18FF7B4900BB03E3 /* InfoPlist.strings in Resources */,
 				470C4D6D18FF7B4900BB03E3 /* Images.xcassets in Resources */,
 				470C4D6518FF7B4900BB03E3 /* Credits.rtf in Resources */,
@@ -270,6 +279,7 @@
 			files = (
 				470C4D6818FF7B4900BB03E3 /* AppDelegate.m in Sources */,
 				470C4D6118FF7B4900BB03E3 /* main.m in Sources */,
+				47B234DB192EDDE800F72917 /* KWScriptCommand.m in Sources */,
 				470C4D8E18FF81AA00BB03E3 /* KWController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

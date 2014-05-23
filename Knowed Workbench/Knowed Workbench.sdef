@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<dictionary title="Knowed Workbench">
+<suite name="Standard Suite" code="????" description="Common classes and commands for all applications.">
+
+<command name="quit" code="aevtquit" description="Quit the application.">
+    <cocoa class="NSQuitCommand"/>
+    <parameter name="saving" code="savo" type="save options" optional="yes" description="Should changes be saved before quitting?">
+        <cocoa key="SaveOptions"/>
+    </parameter>
+</command>
+
+<class name="application" code="capp" description="The application's top-level scripting object.">
+    <cocoa class="NSApplication"/>
+    <property name="name" code="pnam" type="text" access="r" description="The name of the application."/>
+    <property name="frontmost" code="pisf" type="boolean" access="r" description="Is this the active application?">
+        <cocoa key="isActive"/>
+    </property>
+    <property name="version" code="vers" type="text" access="r" description="The version number of the application."/>
+    <responds-to command="quit">
+        <cocoa method="handleQuitScriptCommand:"/>
+    </responds-to>
+</class>
+
+
+</suite>
+
+<suite title="Knowed Workbench Suite" code="????" description="This stuff, yeah.">
+
+<command name="evaluate" code="kwbseval" description="Evaluate a JavaScript expression.">
+    <cocoa class="KWScriptCommand" />
+    <parameter name="expression" code="expr" optional="no" description="The expression to evaluate.">
+        <cocoa key="input"/>
+    </parameter>
+    <result type="string" description="The result of the evaluation"/>
+</command>
+
+</suite>
+
+</dictionary>
