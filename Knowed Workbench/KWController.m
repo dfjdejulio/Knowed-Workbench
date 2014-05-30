@@ -40,6 +40,8 @@
         return input.stringValue;
     };
     [util addSelfToContext:context];
+    id fileUtil = [KnowedFileUtil new];
+    [fileUtil addSelfToContext:context];
     return self;
 }
 
