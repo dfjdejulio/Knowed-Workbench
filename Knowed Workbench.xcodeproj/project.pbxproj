@@ -20,7 +20,7 @@
 		470C4D7F18FF7B4900BB03E3 /* Knowed_WorkbenchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 470C4D7E18FF7B4900BB03E3 /* Knowed_WorkbenchTests.m */; };
 		470C4D8B18FF7B8C00BB03E3 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470C4D8A18FF7B8C00BB03E3 /* JavaScriptCore.framework */; };
 		470C4D8E18FF81AA00BB03E3 /* KWController.m in Sources */ = {isa = PBXBuildFile; fileRef = 470C4D8D18FF81AA00BB03E3 /* KWController.m */; };
-		4734E68D1900174700151AFC /* Knowed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4734E68C1900174700151AFC /* Knowed.framework */; };
+		47310FB01939417A0049E390 /* Knowed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4734E68C1900174700151AFC /* Knowed.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4734E68D1900174700151AFC /* Knowed.framework in Frameworks */,
+				47310FB01939417A0049E390 /* Knowed.framework in Frameworks */,
 				470C4D8B18FF7B8C00BB03E3 /* JavaScriptCore.framework in Frameworks */,
 				470C4D5518FF7B4900BB03E3 /* Cocoa.framework in Frameworks */,
 			);
@@ -403,11 +403,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/JS_Sandbox-dvswmgzftiidtufrsoshomgktmly/Build/Products/Debug",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/KnowedStuff-axkilnccmrdixxbiqprcxrumjobf/Build/Products/Debug",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Knowed Workbench/Knowed Workbench-Prefix.pch";
 				INFOPLIST_FILE = "Knowed Workbench/Knowed Workbench-Info.plist";
@@ -421,11 +417,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/JS_Sandbox-dvswmgzftiidtufrsoshomgktmly/Build/Products/Debug",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/KnowedStuff-axkilnccmrdixxbiqprcxrumjobf/Build/Products/Debug",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Knowed Workbench/Knowed Workbench-Prefix.pch";
 				INFOPLIST_FILE = "Knowed Workbench/Knowed Workbench-Info.plist";
